@@ -46,6 +46,7 @@ const error = () => {
 };
 
 
+
 generateRandomNumber();
 displayNumberList();
 clearInput();
