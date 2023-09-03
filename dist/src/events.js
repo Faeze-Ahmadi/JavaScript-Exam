@@ -14,4 +14,4 @@ const generateRandomNumber = () => {
     }
 };
 generateRandomNumber();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=events.js.map

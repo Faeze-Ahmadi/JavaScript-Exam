@@ -1,5 +1,6 @@
-export const inputNumber = document.querySelector("#inputNumber");
-export const firstButton = document.querySelector("#firstButton");
-export const secondButton = document.querySelector("#secondButton");
-export const thirdButton = document.querySelector("#thirdButton");
+"use strict";
+const inputNumber = document.querySelector("#inputNumber");
+const firstButton = document.querySelector("#firstButton");
+const secondButton = document.querySelector("#secondButton");
+const thirdButton = document.querySelector("#thirdButton");
 //# sourceMappingURL=importer.js.map
