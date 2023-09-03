@@ -4,6 +4,13 @@ const firstButton = document.querySelector("#firstButton");
 const secondButton = document.querySelector("#secondButton");
 const thirdButton = document.querySelector("#thirdButton");
 const checkButton = document.querySelector("#checkButton");
+// import {
+//     inputNumber,
+//     firstButton,
+//     secondButton,
+//     thirdButton,
+//     checkButton
+// } from "./src/importer.js"
 const numberList = [];
 const generateRandomNumber = () => {
     if (firstButton && inputNumber) {

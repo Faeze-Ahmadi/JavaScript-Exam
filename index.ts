@@ -4,6 +4,14 @@ const secondButton = document.querySelector<HTMLButtonElement>("#secondButton");
 const thirdButton = document.querySelector<HTMLButtonElement>("#thirdButton");
 const checkButton = document.querySelector<HTMLButtonElement>("#checkButton");
 
+// import {
+//     inputNumber,
+//     firstButton,
+//     secondButton,
+//     thirdButton,
+//     checkButton
+// } from "./src/importer.js"
+
 
 const numberList: number[] = [];
 
