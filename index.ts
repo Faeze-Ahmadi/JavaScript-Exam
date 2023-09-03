@@ -2,6 +2,8 @@ const inputNumber = document.querySelector<HTMLInputElement>("#inputNumber");
 const firstButton = document.querySelector<HTMLButtonElement>("#firstButton");
 const secondButton = document.querySelector<HTMLButtonElement>("#secondButton");
 const thirdButton = document.querySelector<HTMLButtonElement>("#thirdButton");
+const checkButton = document.querySelector<HTMLButtonElement>("#checkButton");
+
 
 const numberList: number[] = [];
 
@@ -33,16 +35,21 @@ const clearInput = () => {
     }
 };
 
-const error = () => {
-    if (thirdButton && inputNumber) {
-        thirdButton.addEventListener("click", () => {
-            if (isNaN(parseInt(inputNumber.value))) {
-                alert("لطفاً فقط عدد وارد کنید.");
-            } else {
-                inputNumber.value = "";
-            }
+
+const checkBox = () => {
+    if (checkButton) {
+        checkButton.addEventListener("click", () => {
+            for (var i = 0; i < numberList.length; i++) {
+                var itemType = typeof numberList[i]
+            
+                if (itemType === "number"){
+                    alert("all items are number.")
+                } else{
+                    alert("there is an item that it is not number!")
+                };
+            };
         });
-    }
+    };
 };
 
 
@@ -50,4 +57,4 @@ const error = () => {
 generateRandomNumber();
 displayNumberList();
 clearInput();
-error();
+checkBox();
