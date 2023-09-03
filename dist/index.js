@@ -22,6 +22,27 @@ const displayNumberList = () => {
         });
     }
 };
+const clearInput = () => {
+    if (thirdButton && inputNumber) {
+        thirdButton.addEventListener("click", () => {
+            inputNumber.value = "";
+        });
+    }
+};
+const error = () => {
+    if (thirdButton && inputNumber) {
+        thirdButton.addEventListener("click", () => {
+            if (isNaN(parseInt(inputNumber.value))) {
+                alert("لطفاً فقط عدد وارد کنید.");
+            }
+            else {
+                inputNumber.value = "";
+            }
+        });
+    }
+};
 generateRandomNumber();
 displayNumberList();
+clearInput();
+error();
 //# sourceMappingURL=index.js.map
